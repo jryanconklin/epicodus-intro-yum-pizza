@@ -46,16 +46,68 @@
       <div class="mainSection">
         <h3>Pizza Yum</h3>
         <h4>Let's Make a Pizza!</h4>
-        <p class="lead">Choose from the options below to create a pizza to order:</p>
+        <p class="lead">
+          We are Pizza Yum! A super cool local pizza place that probably has some kind of kitchy charm. We also make super rad pizza.</p>
+        <p>
+          You should order one. I mean, pizza is pretty tasty and satisfying. Top serious! You should think about it: it's a classic formula for a great time! Cheese and Bread plus some other toppings. Anyway, choose from the options below to create a pizza to order!
+        </p>
       </div> <!-- End the mainSection Div-->
 
   <!-- Pizza Section -->
       <div class="pizzaSection">
         <div>
-          <h4>Add Toppings:</h4>
-          <form id="pizza" class="form-inline">
+          <form id="pizza" class="form">
 
-            <button type="submit" class="btn btn-danger">Order!</button>
+            <h4>Select a Pizza Size:</h4>
+            <div class="form-inline">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="size" value="Small">
+                  Small
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="size" value="Medium">
+                  Medium
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="size" value="Large">
+                  Large
+                </label>
+              </div>
+            </div> <!-- End Size Category Container  -->
+
+            <h4>Select a Pizza Base:</h4>
+            <div class="form-inline">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="base" value="Tomato">
+                  Tomato Sauce
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="base" value="Basil Pesto">
+                  Basil Pesto
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="base" value="Vegan Spread">
+                  Vegan Spread
+                </label>
+              </div>
+            </div> <!-- End Pizza Base Container  -->
+
+
+
+
+
+            <hr>
+            <button type="submit" class="btn btn-success">Price!</button>
             <div class="results">
 
             </div> <!-- End Results Section -->

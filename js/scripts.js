@@ -4,11 +4,10 @@ function Pizza(size, base, toppings) {
   this.size = size;
   this.base = base;
   this.toppings = toppings;
-  this.price;
+  this.price = 0;
 }
 
-Pizza.prototype.calcPrice = function() {
-  
+Pizza.prototype.calcSize = function() {
     if (this.size === "Small") {
       this.price += 10;
     } else if (this.size === "Medium") {
@@ -18,6 +17,8 @@ Pizza.prototype.calcPrice = function() {
     }
   return this.price;
 }
+
+
 
 // User Interface Logic
 $(document).ready(function() {
@@ -30,7 +31,14 @@ $(document).ready(function() {
     }).get();
     var userPizza = new Pizza(size, base, toppings);
 
-    userPizza.price = userPizza.calcPrice();
-    alert(userPizza.price);
+    console.log(userPizza);
+
+    userPizza.price = userPizza.calcSize();
+
+    toppings.forEach(function(topping) {
+      userPizza.price += 2;
+    });
+
+    alert("The Price of your Pizza is $" + userPizza.price);
   });
 });

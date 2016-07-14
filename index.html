@@ -55,65 +55,110 @@
 
   <!-- Pizza Section -->
       <div class="pizzaSection">
-        <div>
-          <form id="pizza" class="form">
+        <form id="pizza" class="form">
 
+          <div id="pizza-size" class="form-inline">
             <h4>Select a Pizza Size:</h4>
-            <div class="form-inline">
-              <div class="radio">
-                <label>
-                  <input type="radio" name="size" value="Small">
-                  Small
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="size" value="Medium">
-                  Medium
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="size" value="Large">
-                  Large
-                </label>
-              </div>
-            </div> <!-- End Size Category Container  -->
+            <div class="radio">
+              <label>
+                <input type="radio" name="size" value="Small">
+                Small
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="size" value="Medium">
+                Medium
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="size" value="Large">
+                Large
+              </label>
+            </div>
+          </div> <!-- End Size Category Container  -->
 
+          <div id="pizza-base" class="form-inline">
             <h4>Select a Pizza Base:</h4>
-            <div class="form-inline">
-              <div class="radio">
-                <label>
-                  <input type="radio" name="base" value="Tomato">
-                  Tomato Sauce
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="base" value="Basil Pesto">
-                  Basil Pesto
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="base" value="Vegan Spread">
-                  Vegan Spread
-                </label>
-              </div>
-            </div> <!-- End Pizza Base Container  -->
+            <div class="radio">
+              <label>
+                <input type="radio" name="base" value="Tomato">
+                Tomato Sauce
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="base" value="Basil Pesto">
+                Basil Pesto
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="base" value="Vegan Spread">
+                Vegan Spread
+              </label>
+            </div>
+          </div> <!-- End Pizza Base Container  -->
+
+          <div id="toppings" class="form-inline">
+            <h4>Select Vegetable Toppings</h4>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="Olives">
+                Olives
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="Pineapple">
+                Pineapple
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="Artichoke Hearts">
+                Artichoke Hearts
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="Kimchi">
+                Kimchi
+              </label>
+            </div>
+            <h4>Select Meat Toppings</h4>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="Pepperoni">
+                Pepperoni
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="Sausage">
+                Sausage
+              </label>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="Bacon">
+                Bacon
+              </label>
+            </div>
+          </div><!-- End Toppings Section Container -->
 
 
-
-
-
-            <hr>
-            <button type="submit" class="btn btn-success">Price!</button>
-            <div class="results">
-
-            </div> <!-- End Results Section -->
-          </form>
-        </div> <!-- End Blank Div -->
+          <hr>
+          <button type="submit" class="btn btn-success">Show My Order</button>
+        </form> <!-- End the Pizza Order Form -->
       </div> <!-- End Pizza Section  -->
+
+      <div id="order">
+
+      </div> <!-- End Order Section -->
+
+
     </div> <!-- End the Main Container Div-->
 
 <!-- Footer -->

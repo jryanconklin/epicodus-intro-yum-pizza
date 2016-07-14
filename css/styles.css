@@ -1,6 +1,6 @@
 /* ID Selectors */
 
-#comingSoon {
+#order {
   display: none;
 }
 
@@ -62,8 +62,9 @@ img {
   padding: 10px;
 }
 
-.radio {
-  padding: 1em;
+.radio,
+.checkbox {
+  padding: .5em;
 }
 
 .mainFooter {

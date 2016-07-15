@@ -48,15 +48,6 @@ img {
   text-align: center;
 }
 
-.mainSection ol {
-  display: inline-block;
-  margin: 10px;
-}
-
-.mainSection li {
-  margin: 0 5px 5px 0;
-}
-
 .pizzaSection {
   align-items: center;
   padding: 10px;
@@ -67,12 +58,20 @@ img {
   padding: .5em;
 }
 
+.toppings {
+  list-style: none;
+  }
+
 .mainFooter {
   font-size: .75em;
   width: 100%;
   padding-top: 50px;
   height: 100px;
   border-bottom: solid 10px #BCD5D1;
+}
+
+.orderSummary span {
+  font-weight: bold;
 }
 
 /* Floated Images */

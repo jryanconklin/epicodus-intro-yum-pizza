@@ -7,7 +7,7 @@ function Pizza(size, base, toppings) {
   this.price = 0;
 }
 
-Pizza.prototype.calcSize = function() {
+Pizza.prototype.calcPrice = function() {
     if (this.size === "Small") {
       this.price += 10;
     } else if (this.size === "Medium") {
@@ -15,6 +15,9 @@ Pizza.prototype.calcSize = function() {
     } else if (this.size === "Large") {
       this.price += 20;
     }
+  for (var i = 0; i < this.toppings.length; i++) {
+    this.price += 2;
+  }
   return this.price;
 }
 
@@ -31,13 +34,8 @@ $(document).ready(function() {
     }).get();
     var userPizza = new Pizza(size, base, toppings);
 
+    userPizza.price = userPizza.calcPrice();
     console.log(userPizza);
-
-    userPizza.price = userPizza.calcSize();
-
-    toppings.forEach(function(topping) {
-      userPizza.price += 2;
-    });
 
     alert("The Price of your Pizza is $" + userPizza.price);
   });

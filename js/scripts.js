@@ -21,10 +21,6 @@ Pizza.prototype.calcPrice = function() {
   return this.price;
 }
 
-Pizza.prototype.orderSummary = function() {
-  return this.size + " Pizza " + "with a " + this.base + " and the following toppings: " + this.toppings;
-}
-
 Pizza.prototype.printPizza = function() {
   $(".orderSummary").append("You have ordered a " + this.size + " Pizza! " + "It has a tasty " + this.base + " base. " + "<span>The Price of your Pizza is $" + this.price + "</span>." + " Your pizza has the following toppings:");
   for (var i = 0; i < this.toppings.length; i++) {
@@ -49,4 +45,4 @@ $(document).ready(function() {
     $("#order").show();
 
   }); // End Form Submit Event
-}); //End Document Ready 
+}); //End Document Ready

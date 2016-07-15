@@ -1,8 +1,8 @@
 // Business Logic
 
 function Pizza(size, base, toppings) {
-  this.size = size;
-  this.base = base;
+  this.size = size || "Small";
+  this.base = base || "Tomato Sauce";
   this.toppings = toppings;
   this.price = 0;
 }
